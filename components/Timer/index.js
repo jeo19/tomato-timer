@@ -3,10 +3,10 @@ import { bindActionCreators } from "redux";
 import { actionCreator as tomatoActions } from "../../reducer";
 import Timer from "./presenter";
 function mapStateToProps(state) {
-  const { isPlaying, elapseTime, timeDuration } = state;
+  const { isPlaying, elapsedTime, timeDuration } = state;
   return {
     isPlaying,
-    elapseTime,
+    elapsedTime,
     timeDuration
   };
 }

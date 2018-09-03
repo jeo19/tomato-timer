@@ -25,7 +25,7 @@ const TIME_DURATION = 1500;
 const initialState = {
   isPlaying: false,
   elapsedTime: 0,
-  tiemDuration: TIME_DURATION
+  timeDuration: TIME_DURATION
 };
 function reducer(state = initialState, action) {
   switch (action.type) {
@@ -54,6 +54,7 @@ function applyRestartTimer(state) {
   };
 }
 function applyAddSecond(state) {
+  const { elapsedTime } = state;
   if (elapsedTime < TIME_DURATION) {
     return {
       ...state,
