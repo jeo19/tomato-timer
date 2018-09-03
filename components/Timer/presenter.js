@@ -5,10 +5,11 @@ class Timer extends Component {
   render() {
     const {
       isPlaying,
-      elapseTime,
+      elapsedTime,
       timeDuration,
       startTimer,
-      restartTimer
+      restartTimer,
+      addSecond
     } = this.props;
     return (
       <View style={styles.container}>
