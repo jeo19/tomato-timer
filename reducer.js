@@ -72,5 +72,6 @@ const actionCreator = {
   restartTimer,
   addSecond
 };
+export { actionCreator };
 //Export Reducer
 export default reducer;

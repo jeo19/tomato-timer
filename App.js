@@ -5,7 +5,7 @@ import { createStore } from "redux";
 import reducer from "./reducer";
 import Timer from "./components/Timer";
 
-let store = createStore(reducer);
+// let store = createStore(reducer);
 
 console.log(store);
 
